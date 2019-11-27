@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Welcome to javascript</title>
+    </head>
+    <body>
+        <input type="text" id="input1"/>
+        <button id="but1">Submit</button>
+        <div id="div1">please enter something valid</div>
+        <script>
+            var inp1=document.getElementById("input1").value;
+            document.getElementById("but1").onclick=function(){
+                var inp1=document.getElementById("input1").value;
+                if (inp1=="ish"){
+                    document.getElementById("div1").innerHTML=inp1;
+                }
+                else{
+                    document.getElementById("div1").innerHTML="hey";
+                }
+            }
+        </script>
+    </body>
+</html>
