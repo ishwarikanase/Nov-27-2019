@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Welcome to javascript</title>
+    </head>
+    <body>
+        <button id="myButton">change first div text</button>
+        <button id="appendB">Append text</button>
+        <button id="creatorB">Creator</button>
+        <div id="firstDiv">Ishwari is fool</div>
+        <div id="emptyDiv"></div>
+
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick=function(){
+                document.getElementById("firstDiv").innerHTML="ishwari is not a fool";
+            }
+            document.getElementById("appendB").onclick=function(){
+                document.getElementById("firstDiv").innerHTML=document.getElementById("firstDiv").innerHTML+" and stupid";
+            }
+            document.getElementById("creatorB").onclick=function(){
+                document.getElementById("emptyDiv").innerHTML="<ul><li>ish</li><li>raj</li></ul>";
+            }
+        </script>
+    </body>
+</html>

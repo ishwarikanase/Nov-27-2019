@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Welcome to javascript</title>
+    </head>
+    <body>
+        <input type="text"  id="firstI" value="ishu"/>
+        <button id="but">Click me!!!</button>
+        <div id="firstDiv">welcome new user</div>
+        <script type="text/javascript">
+            var fDiv="firstDiv";
+            var fInput=document.getElementById("firstI").value;
+            document.getElementById("but").onclick=function(){
+                fInput=document.getElementById("firstI").value;
+                document.getElementById(fDiv).innerHTML=document.getElementById(fDiv).innerHTML + fInput;
+            }
+        </script>
+    </body>
+</html>
